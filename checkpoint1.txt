@@ -1,0 +1,56 @@
+1. What data types do each of these values represent?
+
+"A Clockwork Orange" - STRING
+42 - INTERGER
+09/02/1945 - DATE
+98.7 - FLOAT
+$15.99 - NUMERIC
+
+2. Explain when a database would be used. Explain when a text file would be used.
+
+A Database would be used when we need to store, add or manpulate data. A text file would be use to to simply hold information t
+
+
+3. Describe one difference between SQL and other programming languages.
+
+SQL is a Declartive language.
+
+4. In your own words, explain how the pieces of a database system fit together at a high level.
+
+Having the ability t store data for easy searching, and a program that allows for mutiplle applicaiton access the data and persist beyone the end of a application process allows us to fully use, search and manupliate data. 
+
+5. Explain the meaning of table, row, column, and value.
+
+The table is how the data is structured, which include all the row, columns, and values of a DB
+
+The Rows make up a complete conceptual unit
+
+Columns define what the data represents
+
+Value is the acutal data in each cell
+
+ 
+6. List three data types that can be used in a table.
+
+Numbers, text, and objects
+
+7. Given this payments table, provide an English description of the following queries and include their  results:
+
+a. look at the date and the amount from the paymenets table
+
+b. look for an amount from the payment table where the amount is less than 500
+
+c. look at everything from the payment table where the payee column equal Mega Foods
+
+8. Given this users table, write SQL queries using the following criteria and include the output:
+
+a. SELECT email, sign-up-date
+   FROM users
+   WHERE name = 'DeAndre Data'
+
+b. SELECT userid
+   FROM users
+   WHERE email = 'aleesia.algorithm@uw.edu'
+
+c. SELECT *
+   WHERE userid = '4'

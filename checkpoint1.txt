@@ -44,7 +44,7 @@ c. look at everything from the payment table where the payee column equal Mega F
 
 8. Given this users table, write SQL queries using the following criteria and include the output:
 
-a. SELECT email, sign-up-date
+a. SELECT email, signup
    FROM users
    WHERE name = 'DeAndre Data'
 
@@ -53,4 +53,5 @@ b. SELECT userid
    WHERE email = 'aleesia.algorithm@uw.edu'
 
 c. SELECT *
+   FROM users
    WHERE userid = '4'

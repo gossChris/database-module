@@ -22,6 +22,7 @@ Numeric is good data type for phone number and quanities. Text is great for name
 
 
 4. Decide how to create a new table to hold a list of people invited to a wedding dinner. The table needs to have first and last names, whether they sent in their RSVP, the number of guests they are bringing, and the number of meals (1 for adults and 1/2 for children).
+CREATE TABLE 
 
 -Which data type would you use to store each of the following pieces of information?
 First and last name = Character

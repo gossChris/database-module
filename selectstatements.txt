@@ -1,0 +1,97 @@
+1. Write out a generic SELECT statement.
+
+SELECT movie
+FROM theatertable
+WHERE movie='Endgame";
+
+2. Create a fun way to remember the order of operations in a SELECT statement, such as a mnemonic.
+
+SCFTAAC
+(SELECT COLUMS FROM TABLE AND ADD CONDTIONS)
+
+3. Given this dogs table, write queries to select the following pieces of data:
+Display the name, gender, and age of all dogs that are part Labrador.
+
+SELECT name, age, gender
+FROM dogs
+WHERE breed LIKE 'labrador%';
+
+
+Display the ids of all dogs that are under 1 year old.
+
+SELECT id
+FROM dogs
+WHERE age < 1;
+
+
+Display the name and age of all dogs that are female and over 35lbs.
+
+SELECT name, age
+FROM dogs
+WHERE gender = 'F' AND weight > 35;
+
+
+Display all of the information about all dogs that are not Shepherd mixes.
+
+SELECT *
+FROM dogs
+WHERE breed NOT LIKE '%shepherd';
+
+
+Display the id, age, weight, and breed of all dogs that are either over 60lbs or Great Danes.
+
+SELECT id, age, weight, breed
+FROM dogs
+WHERE weight > 60 OR breed = 'Great Dane';
+
+
+4. Given this cats table, what records are returned from these queries?
+SELECT name, adoption_date FROM cats;
+SELECT name, age FROM cats;
+
+Two results, one being the name and and adoptions date of  all cats, and the other being the name and age of all cats.
+
+From the cats table, write queries to select the following pieces of data.
+Display all the information about all of the available cats.
+
+SELECT * 
+FROM cats
+
+
+Display the name and sex of all cats who are 7 years old.
+
+SELECT name, gender
+FROM cats
+Where age = 7;
+
+
+Find all of the names of the cats, so you don’t choose duplicate names for new cats.
+
+SELECT name
+FROM cats;
+
+
+5. List each comparison operator and explain when you would use it. Include a real world example for each.
+
+> to find a value greater than the listed value ( WHERE age > 5) 
+< to find a value less than the listed value  (WHERE age < 5)
+= to find a value that is equal to the listed value (WHERE age = 5)
+<= to find a value that is less than or equal to the listed value (WHERE age <= 5)
+>= to find a value that is greater than or equal to the listed value (WHERE age >= 5)
+!= to find a value that is NOT equal to the listed value (WHERE age != 5)
+<> to find a value that is less than or greater than the listed value (WHERE age <> 5)
+
+From the cats table, what data is returned from these queries?
+SELECT name FROM cats WHERE gender = ‘F’;
+
+The name of all cats who's gender is female
+
+
+SELECT name FROM cats WHERE age <> 3;
+
+The name of all cats who's age is less than or greater than 3
+
+
+SELECT ID FROM cats WHERE name != ‘Mushi’ AND gender = ‘M’;
+
+The ID of all the cats who do not have the name of Mushi and the gender is male.
